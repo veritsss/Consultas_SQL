@@ -2,7 +2,6 @@
 ## SELECT
 
 Se utiliza para mostrar todos los valores de una variable dentro de una Tabla
-
 ```sql
 select titulo, temporada from Episodios
 ```
