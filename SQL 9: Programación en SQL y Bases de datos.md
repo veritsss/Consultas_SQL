@@ -1,4 +1,4 @@
-# Programación en SQL y Bases de datos
+# SQL 9: Programación en SQL y Bases de datos
 ## Procedimientos almacenados (Store procedures)
 
 Un **procedimiento almacenado** es como una **función guardada dentro de la base de datos**.
