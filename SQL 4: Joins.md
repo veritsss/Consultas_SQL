@@ -75,3 +75,23 @@ where rating_imdb>9
 ```
 Muestra los títulos de episodios con duración > 20 o con rating > 9.
 Si cumplen ambas condiciones, solo aparecerán una vez.
+
+# 🟤 SELF JOIN
+Es un JOIN de una tabla consigo misma. Se usa cuando una fila de una tabla hace referencia a otra fila de la misma tabla (por ejemplo, jerarquías como jefes y empleados).
+```sql
+SELECT e1.nombre AS 'Empleado',
+       e2.nombre AS 'Jefe'
+FROM empleados e1
+INNER JOIN empleados e2
+ON e1.jefe_id = e2.empleado_id;
+```
+
+👉 En este caso, la tabla empleados se une consigo misma:
+
+e1 representa al empleado.
+
+e2 representa a su jefe.
+
+El resultado muestra cada empleado junto a su jefe correspondiente.
+
+Si un empleado no tiene jefe (por ejemplo, el director general), aparecerá con valor NULL en la columna de jefe (si usas LEFT JOIN).
