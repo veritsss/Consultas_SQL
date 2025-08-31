@@ -83,6 +83,15 @@ Select * from Series
 Where 
 (genero = 'Comedia' or genero = 'Animación')
 ```
+### XOR
+
+Cuando queremos que cualquiera de las condiciones se cumpla pero no queremos que se cumplan las dos
+
+```sql
+Select * from Series
+Where 
+(genero = 'Comedia' xor genero = 'Animación')
+```
 
 ## CLÁUSULA IN/NOT IN
 
